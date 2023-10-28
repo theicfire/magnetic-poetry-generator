@@ -5,4 +5,5 @@ By default, the js file has a bunch of words to use, but you can enter other wor
 
 There's some good starting words (and more) on this website: https://magneticpoetrymnl.com/pages/starter-kit-word-list
 
+# Screenshot
 ![Screenshot](screenshot.png)
