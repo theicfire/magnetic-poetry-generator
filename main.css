@@ -1,0 +1,67 @@
+/* Reset some default styles for a cleaner look */
+body, table {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    font-size: 50px;
+}
+
+/* Styling the tables */
+table {
+    /* width: 100%; */
+    border-collapse: collapse;
+    margin-bottom: 1em; /* Some spacing between tables in the same page */
+    /* page-break-inside: avoid; */
+}
+
+td {
+    border: 8px solid #000;
+    padding: 8px 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* This will ensure a page break between tables */
+/* .page-break {
+    page-break-after: always;
+} */
+
+/* Styling the generate button for a better look */
+#generateBtn {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generateBtn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Hide elements during printing */
+@media print {
+    #generateBtn, #wordList {
+        display: none;
+    }
+    
+    /* Remove default margins set by the browser during printing */
+    @page {
+        margin: 20px 50px 20px 50px;
+        size: auto;  /* auto is the initial value */
+    }
+
+    body {
+        margin: 0mm; /* This sets the margin on the body of the content. */
+    }
+
+    /* Hide other unnecessary elements if you add any in the future */
+    .no-print {
+        display: none;
+    }
+}
+
+/* Continue with the rest of the CSS styles here */
